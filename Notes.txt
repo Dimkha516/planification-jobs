@@ -1,0 +1,2 @@
+1) Pour des testes, je n'ai pas changer l'état d'une transaction planifiée exécutés
+2°) Pour des testes, j'enregistre les transactions planifiée exécutés dans transactions_test

@@ -75,29 +75,6 @@ class FirestoreREST
         }
     }
 
-    // public function addDocument($collectionName, $data)
-    // {
-    //     try {
-    //         // Vérifie si le chemin correspond à un document ou une collection
-    //         $isDocument = substr_count($path, '/') % 2 == 1;
-    //         $response = Http::withHeaders([
-    //             'Authorization' => 'Bearer ' . $this->accessToken,
-    //             'Content-Type' => 'application/json',
-    //         ])->post("{$this->baseUrl}/{$collectionName}", [
-    //                     'fields' => $this->prepareFields($data)
-    //                 ]);
-
-    //         if ($response->successful()) {
-    //             return $this->parseFields($response->json()['fields']);
-    //         }
-
-    //         throw new \Exception('Erreur Firestore: ' . $response->body());
-    //     } catch (\Exception $e) {
-    //         \Log::error('Erreur FirestoreREST: ' . $e->getMessage());
-    //         throw $e;
-    //     }
-    // }
-
     private function prepareFields($data)
     {
         $fields = [];
